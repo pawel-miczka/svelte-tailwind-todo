@@ -2,6 +2,7 @@
 
 <div class="w-full h-full flex items-center justify-center bg-gray-200">
 	<div>
+		<h1 class="pb-4 text-gray-700 text-4xl font-bold">{$title}</h1>
 		<div class="pb-2 text-gray-500 text-sm">Wykonano: <strong>{numberOfCompletedTodos}</strong> zadań</div>
 
 		<form class="flex pb-4" on:submit|preventDefault={addNewTodo}>
@@ -27,6 +28,7 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
 	import Tailwindcss from './Tailwindcss.svelte';
+	import { title } from "./stores";
 
 	let todos = [];
 	let newTodoName = '';

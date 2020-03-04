@@ -1,0 +1,9 @@
+<style global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  body {
+    @apply p-0 m-0
+  }
+</style>

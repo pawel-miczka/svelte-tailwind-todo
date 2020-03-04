@@ -12,7 +12,7 @@
 		
 		{#each todos as todo}
 			<label 
-				class="block px-3 py-2 mb-2 flex items-center cursor-pointer rounded {todo.done ? 'bg-green-300 text-green-700' : 'bg-gray-300 text-gray-700'}" 
+				class="block px-4 py-3 mb-2 flex items-center cursor-pointer rounded {todo.done ? 'bg-green-300 text-green-700' : 'bg-gray-300 text-gray-700'}" 
 				transition:fade
 				>
 				<input type="checkbox" bind:checked={todo.done}>
